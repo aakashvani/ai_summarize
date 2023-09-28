@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLazyGetSummaryQuery } from "../services/article";
 
 const Demo = () => {
   const [article, setArtical] = useState({
@@ -6,8 +7,8 @@ const Demo = () => {
     summary: "",
   });
 
-  const handleSubmit = async (e) => {
-    alert("Submitted");
+  const handleSubmit = async () => {
+    //   alert("Submitted");
   };
   return (
     <section className="mt-16 w-full max-w-xl">
