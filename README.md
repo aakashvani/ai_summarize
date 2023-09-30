@@ -1,4 +1,4 @@
-# AI Artical Summarize
+# AI Article Summarize
 
 
 https://rapidapi.com/restyler/api/article-extractor-and-summarizer
