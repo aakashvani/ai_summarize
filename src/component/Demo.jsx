@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { copy, linkIcon, loader, tick } from "../assets";
 import { useLazyGetSummaryQuery } from "../services/article";
 
 const Demo = () => {
@@ -66,7 +67,11 @@ const Demo = () => {
           className="relative flex justify-center items-center"
           onSubmit={handleSubmit}
         >
-          <img src="" alt="" />
+          <img
+            src={linkIcon}
+            alt="link-icon"
+            className="absolute left-0 my-2 ml-3 w-5"
+          />
           <input
             type="url"
             placeholder="Enter a URL"
@@ -110,10 +115,10 @@ const Demo = () => {
       {/* Display Result */}
       <div className="my-10 max-w-full flex justify-center items-center">
         {isFetching ? (
-          <p className="w-20 h-20 object-contain">Loading...</p>
+          <img src={loader} alt="loader" className="w-20 h-20 object-contain" />
         ) : error ? (
           <p className="font-inter font-bold text-black text-center">
-            Well, that wasn't supposed to happen...
+            Well, that was no t supposed to happen...
             <br />
             <span className="font-satoshi font-normal text-gray-700">
               {error?.data?.error}
