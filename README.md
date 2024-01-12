@@ -4,6 +4,8 @@
 OpenAI ChatGPT 3.5</h2>
 </p>
 
+### Introducing "ai_summarize" – a dynamic project leveraging React.js, Redux Toolkit, and Tailwind CSS. Dive into the realm of frontend API integration and master the art of crafting a sleek UI with TailwindCSS. Experience the convenience of summarizing any article by simply pasting its URL into this application. 🚀📰
+
 
 ## Tech Stack
 - React.js
